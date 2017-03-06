@@ -64,7 +64,18 @@ $ go get -u github.com/golang/protobuf/{proto,protoc-gen-go}
 `static` 下面 js，css 这些文件。
 
 
+### Server
 
+#### start
 
+```
+make start
+```
+在浏览器里面访问 `http://localhost:1323`
 
+#### stop
+
+```
+make stop
+```
 
