@@ -45,6 +45,12 @@ $ go get google.golang.org/grpc
 $ go get -u github.com/golang/protobuf/{proto,protoc-gen-go}
 ```
 
+#### GQS
+
+```
+go get -u github.com/sunisdown/gqs
+```
+
 ### 架构
 
 #### App
