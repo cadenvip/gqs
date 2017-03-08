@@ -3,7 +3,12 @@ package main
 import (
 	"github.com/labstack/echo"
 	"github.com/sunisdown/gqs/apps"
+	 "net/http"
 )
+
+func hello(c echo.Context) error {
+	return c.String(http.StatusOK, "Hello, World!")
+}
 
 func main() {
 	e := echo.New()
@@ -19,4 +24,8 @@ func main() {
 	// 正常的分路由
 	e.GET("/grpc", apps.GRPCDEMO)
 	e.Logger.Fatal(e.Start(":1323"))
+	// 路由
+	e.GET("/hello", hello)
+
+
 }
